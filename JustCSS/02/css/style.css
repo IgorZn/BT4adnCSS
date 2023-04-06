@@ -1,0 +1,72 @@
+/*
+selectors:
+    element     -- less specific
+    class       -- more specific
+    id          -- most specific (not recommend to use, because it's for JS)
+*/
+
+/* * (star) means select everything*/
+* {
+    /*font-family: monospace;*/
+    /*border: 1px solid black;*/
+}
+
+html {
+    font-size: 22px;
+}
+
+main {
+    font-family: monospace;
+}
+
+body {
+
+}
+
+/* inherit font settings for those elements */
+button, input, textarea {
+    font: inherit;
+}
+
+/* h1, h2 -> element AND element */
+/* h1 h2 -> h2 inside h1 */
+h1, h2 {
+    color: #005cbf;
+}
+
+/*p span {*/
+/*    text-transform: uppercase;*/
+/*    background-color: #377ba8;*/
+/*}*/
+
+.highlight {
+    text-transform: uppercase;
+    background-color: #377ba8;
+}
+
+/* class selectors */
+/* class selectors has height priority then element*/
+.gray {
+    color: #c71530;
+}
+
+.gray {
+    color: #c7bd15;
+}
+
+
+/* first P (last rule applied) */
+p {
+    color: #377ba8;
+}
+/* last P (last rule applied) */
+p {
+    color: #30ff00;
+}
+
+
+/* id */
+/* id -- should be uniq and it's more for JS rather then for css */
+#second {
+    font-style: italic;
+}
