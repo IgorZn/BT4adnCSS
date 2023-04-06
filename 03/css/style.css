@@ -4,5 +4,9 @@ a {
 }
 
 body {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.height {
+    min-height: 90vh;
 }
