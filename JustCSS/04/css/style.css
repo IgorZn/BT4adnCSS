@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 0.5rem;
+    font-size: 3rem;
+    border: 10px dashed yellowgreen;
+    width: 50%;
+    /*background: #005cbf;*/
+    /*margin: 30px;*/
+
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 50%;
+    background: #0f6674;
+    font-size: 1rem;
+}
+
+h2 {
+    margin: 10px;
+}
+
+p {
+    font-size: 1em;
+    width: 40ch;
+}

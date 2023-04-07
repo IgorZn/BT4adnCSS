@@ -1,0 +1,11 @@
+body {
+    font-size: 22px;
+    font-family: monospace;
+    line-height: 1.5;
+    background: papayawhip;
+    color: rgb(0,0,0);
+}
+
+p {
+    color: #063567;
+}
