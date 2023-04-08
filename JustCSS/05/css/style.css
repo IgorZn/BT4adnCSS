@@ -1,0 +1,35 @@
+/*
+Согласно спецификации CSS ширина блока складывается из ширины контента (width),
+значений отступов (margin), полей (padding) и границ (border). Аналогично
+обстоит и с высотой блока. Свойство box-sizing позволяет изменить этот алгоритм,
+чтобы свойства width и height задавали размеры не контента, а размеры блока.
+
+border-box    Свойства width и height включают в себя значения полей и границ,
+              но не отступов (margin). Эта модель используется браузером
+              Internet Exporer в режиме несовместимости.
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    border: 2px dashed rebeccapurple;
+    font-size: 1.5rem;
+    margin: 1.5em;
+    padding: 1.5rem;
+}
+
+.circule {
+    border: 2px solid yellowgreen;
+    border-radius: 50px;
+    margin: 10px auto;
+    background: gold;
+    width: 100px;
+    height: 100px;
+
+}
