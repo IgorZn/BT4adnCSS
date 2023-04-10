@@ -11,8 +11,13 @@
 }
 
 .title-underline {
-    width: 100px;
+    width: 10rem;
     height: 8px;
     margin: 0 auto;
     /*background: blue!important;*/
+}
+
+img-style {
+    height: 436px;
+    width: 348px;
 }
