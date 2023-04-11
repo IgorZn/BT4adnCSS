@@ -25,3 +25,13 @@ img-style {
 #filter {
     background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url("../img/project4.jpg") center/cover no-repeat fixed;
 }
+
+#map {
+    width: 600px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background-color:#ccc;
+    overflow:hidden;
+}
