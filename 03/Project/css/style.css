@@ -21,3 +21,7 @@ img-style {
     height: 436px;
     width: 348px;
 }
+
+#filter {
+    background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url("../img/project4.jpg") center/cover no-repeat fixed;
+}
