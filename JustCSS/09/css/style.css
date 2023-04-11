@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    line-height: 7rem;
+}
+
+h2 {
+    padding: 1rem;
+    background: rgba(250, 187, 0, 0.3);
+    border-radius: 2rem 2rem 0 0;
+}
+
+ul {
+    list-style-type: none;
+    background: rgba(0,0,0, 0.03);
+}
+
+li {
+    border-top: 1px solid #444;
+}
+
+li a {
+    display: block;
+}
+
+nav:last-child,
+ul,
+li:last-child a {
+    border-radius: 0 0 2rem 2rem;
+}
+
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #063567;
+}
+
+li a:hover,
+li a:focus {
+    background: rgba(189, 25, 26, 0.3);
+    color: whitesmoke;
+    cursor: pointer;
+}
