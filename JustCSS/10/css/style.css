@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+Применяется ко всем четырём сторонам
+    margin: 1em;
+    margin: -3px;
+
+по вертикали | по горизонтали
+    margin: 5% auto;
+
+сверху | горизонтально | снизу
+    margin: 1em auto 2em;
+
+сверху | справа | снизу | слева
+    margin: 2px 1em 0 auto;
+
+*/
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5%;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*main {*/
+/*    background: #20c997;*/
+/*    width: 55%;*/
+/*}*/
+
+p {
+    background: lightgrey;
+    margin: 5% auto 5%;
+
+}
+
+
+/* we can't apply with and height for inline elements */
+/* we have to change it to display: block; */
+.opposite {
+    background: #0f6674;
+    color: #20c997;
+    padding: 15%;
+    display: block;
+}
+
+p:last-of-type {
+    margin: auto 5%;
+}
+
+nav {
+    margin: 15% auto;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    background: #9ae8fc;
+    border-radius: 0.25rem;
+    margin: 0;
+    text-align: right;
+}
+
+li {
+    display: inline;
+    margin-inline: 0.5rem;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+    text-decoration: underline;
+}
