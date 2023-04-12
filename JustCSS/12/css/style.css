@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+Применяется ко всем четырём сторонам
+    margin: 1em;
+    margin: -3px;
+
+по вертикали | по горизонтали
+    margin: 5% auto;
+
+сверху | горизонтально | снизу
+    margin: 1em auto 2em;
+
+сверху | справа | снизу | слева
+    margin: 2px 1em 0 auto;
+
+*/
+
+/* we can't apply with and height for inline elements */
+/* we have to change it to display: block; */
+
+/** {*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.columns {
+    /*column-count: 4;*/
+    /*column-width: 250px;*/
+    columns: 4 250px;
+    column-rule: 3px solid #333;
+    column-gap: 3rem;
+}
+
+/*.columns p:first-of-type {*/
+/*    margin-top: 0;*/
+/*}*/
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background: black;
+    color: #ffffff;
+    padding: 1rem;
+    break-after: avoid;
+}
+
+.columns .quote {
+    margin: 5% auto;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    column-span: all;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
