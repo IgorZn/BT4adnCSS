@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+Применяется ко всем четырём сторонам
+    margin: 1em;
+    margin: -3px;
+
+по вертикали | по горизонтали
+    margin: 5% auto;
+
+сверху | горизонтально | снизу
+    margin: 1em auto 2em;
+
+сверху | справа | снизу | слева
+    margin: 2px 1em 0 auto;
+
+*/
+
+/* we can't apply with and height for inline elements */
+/* we have to change it to display: block; */
+
+/** {*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+/*.my-p {*/
+/*    background: #20c997;*/
+/*}*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.my-p p {
+    display: block;
+    background: blue;
+    margin: 5% auto 5%;
+    padding: 4rem;
+    width: 25vw;
+}
+
+.absolute {
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: -100000px;
+    z-index: 1;
+}
+
+.relative {
+    background: red;
+    position: relative;
+    top: 200px;
+    left: 250px;
+}
+
+.fixed {
+    background: #1c7430;
+    position: fixed;
+    top: 100px;
+}
+
+.sticky {
+    background: #000;
+    position: sticky;
+    top: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    height: 100px;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+}
+
+footer {
+    background: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 3rem;
+}
+
+a:visited {
+    color: white;
+}
+
+.social {
+    background: royalblue;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+    left: 0;
+}
