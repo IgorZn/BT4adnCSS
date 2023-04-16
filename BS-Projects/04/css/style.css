@@ -16,3 +16,35 @@ body {
     background: var(--mainWhite);
     color: var(--mainBlack);
 }
+
+/* nav links */
+.nav-link {
+    color: var(--mainPink);
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+
+/* cart styles */
+cart-info__icon {
+    color: var(--mainBlack);
+    cursor: pointer;
+}
+
+.cart-info {
+    border: 0.1rem solid var(--mainBlack);
+    color: var(--mainBlack);
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+
+.cart-info:hover {
+    background: var(--mainPink);
+    border-color: var(--mainPink);
+    color: var(--mainWhite);
+}
+
+.cart-info:hover .cart-info__icon {
+    color: var(--mainWhite);
+}
