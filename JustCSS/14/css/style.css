@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+Применяется ко всем четырём сторонам
+    margin: 1em;
+    margin: -3px;
+
+по вертикали | по горизонтали
+    margin: 5% auto;
+
+сверху | горизонтально | снизу
+    margin: 1em auto 2em;
+
+сверху | справа | снизу | слева
+    margin: 2px 1em 0 auto;
+
+*/
+
+/* we can't apply with and height for inline elements */
+/* we have to change it to display: block; */
+
+/** {*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+
+    display: flex;
+    /*justify-content: flex-end;*/
+    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    /*align-content: flex-start;*/
+    /*align-content: flex-end;*/
+    /*align-content: space-between;*/
+    align-content: space-evenly;
+}
+
+.box {
+    min-width: 50px;
+    /*height: 50px;*/
+    min-height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*flex-grow: 1;*/
+    /*flex-basis: 100px;*/
+
+    /*flex-shrink: 1;*/
+    /*flex-basis: 250px;*/
+
+    /*
+    Значение по умолчанию:
+        flex-grow: 0
+        flex-shrink: 1
+        flex-basis: auto
+    */
+    flex: 1 1 150px;
+}
+
+.box:nth-child(2) {
+    flex: 2 2 150px;
+    order: 1;
+}
