@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+Применяется ко всем четырём сторонам
+    margin: 1em;
+    margin: -3px;
+
+по вертикали | по горизонтали
+    margin: 5% auto;
+
+сверху | горизонтально | снизу
+    margin: 1em auto 2em;
+
+сверху | справа | снизу | слева
+    margin: 2px 1em 0 auto;
+
+*/
+
+/* we can't apply with and height for inline elements */
+/* we have to change it to display: block; */
+
+/** {*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd"
+            "mn mn mn mn mn mn mn sb sb"
+            "ft ft ft ft ft ft ft ft ft";
+    gap: 0.1em;
+}
+
+.el {
+    background: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sb;
+    background: #00f;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+
+.container {
+    grid-area: mn;
+    display: grid;
+    /*grid-auto-flow: column;*/
+    /*grid-template-columns: 2fr 1fr 1fr;*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: repeat(2, 2fr 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    min-height: 400px;
+    row-gap: 0.1em;
+    column-gap: 0.1em;
+    /*gap: 1em; !* == row-gap: 1em; and column-gap: 1em;*!*/
+}
+
+.box:first-child {
+    background: blue;
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 4;*/
+
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 3;*/
+
+    grid-column: 1/4;
+    grid-row: 1/3;
+
+    display: grid;
+    place-content: center;
+}
+
+.box:nth-child(2) {
+    background: purple;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+
+
+
