@@ -117,3 +117,13 @@ cart-info__icon {
     top: 0;
     left: 0;
 }
+
+/* store */
+.store {
+    background: var(--mainGrey);
+}
+
+.search-box {
+    background: var(--mainPink);
+    color: var(--mainBlack);
+}
