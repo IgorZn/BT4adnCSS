@@ -127,3 +127,49 @@ cart-info__icon {
     background: var(--mainPink);
     color: var(--mainBlack);
 }
+
+.single-item {
+    transition: all 0.3s linear;
+}
+
+.single-item:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0, .4);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.store-img {
+    transition: all 1s ease-in-out;
+}
+
+.image-container:hover .store-img {
+    transform: scale(1.1);
+}
+
+.store-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: var(--mainYellow);
+    border-radius: 0.45rem 0 0 0;
+    transition: all 0.8s ease-in-out;
+    transform: translate(100%, 100%);
+}
+
+.image-container:hover .store-item-icon {
+    transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+    color: var(--mainWhite);
+}
+
+
+
+
+
