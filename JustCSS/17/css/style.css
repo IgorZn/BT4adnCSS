@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/*
+border-box  указывает браузеру учитывать любые границы
+            и отступы в значениях, которые вы указываете
+            для ширины и высоты элемента.
+
+Применяется ко всем четырём сторонам
+    margin: 1em;
+    margin: -3px;
+
+по вертикали | по горизонтали
+    margin: 5% auto;
+
+сверху | горизонтально | снизу
+    margin: 1em auto 2em;
+
+сверху | справа | снизу | слева
+    margin: 2px 1em 0 auto;
+
+*/
+
+/* we can't apply with and height for inline elements */
+/* we have to change it to display: block; */
+
+/** {*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.5rem "Roboto", sans-serif;
+    min-height: 100vh;
+
+
+    background: #b0a9a9;
+    background-image: radial-gradient(white, #26221e);
+    flex-direction: column;
+    display: flex;
+
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background: #948e8e;
+    color: whitesmoke;
+}
+
+header {
+    top: 0
+}
+
+nav {
+    background: white;
+    color: #000;
+    padding: 0.5rem;
+    border-bottom: 2px solid;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+
+/* || SMALL */
+@media screen and (min-width: 567px){
+    body {
+        background: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+
+
+/* || MEDIA */
+@media screen and (min-width: 768px){
+    body {
+        background: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+
+
+/* || LARGE */
+@media screen and (min-width: 992px){
+    body {
+        background: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+
+}
+
+
+
+/* || XL */
+@media screen and (min-width: 1200px){
+    body {
+        background: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+
+
+/* || MOBILE */
+@media screen and (min-height: 435px) and (min-aspect-ratio: 7/4){
+    body {
+        background: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+
+}
+
