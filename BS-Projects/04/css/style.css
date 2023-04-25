@@ -185,3 +185,27 @@ cart-info__icon {
 
 
 
+/* footer */
+.footer-title {
+    background: var(--mainBlack);
+}
+
+.footer-contact {
+    background: var(--mainGrey);
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: var(--mainWhite);
+    transition: all 0.4s ease-in-out;
+}
+
+.footer-icon-contact {
+    font-size: 1.5rem;
+    color: var(--mainBlack);
+    transition: all 0.4s ease-in-out;
+}
+
+.footer-icon:hover, .footer-icon-contact:hover{
+    color: var(--mainPink);
+}
