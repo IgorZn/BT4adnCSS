@@ -47,9 +47,35 @@ body {
 }
 
 /* banner */
+.banner-info {
+    min-height: calc(100vh - 101px);
+    background: var(--mainGrey);
+    position: relative;
+}
+
 .banner-info__footer {
     background: var(--mainGreen);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+
+.banner-img {
+    min-height: calc(100vh - 101px);
+    background: url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+}
+
 .banner-img__footer {
     background: var(--mainDark);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 104px;
+    display: flex;
+    align-items: center;
 }
