@@ -45,3 +45,11 @@ body {
     padding: 0.5rem;
     border-radius: 50%;
 }
+
+/* banner */
+.banner-info__footer {
+    background: var(--mainGreen);
+}
+.banner-img__footer {
+    background: var(--mainDark);
+}
