@@ -58,9 +58,6 @@ body {
 }
 
 
-
-
-
 /* Nav bar */
 .navbar {
     background: var(--mainDark);
@@ -134,10 +131,12 @@ body {
     color: var(--mainWhite);
 }
 
+
 /* featured */
 .featured {
     background: var(--mainGrey);
 }
+
 
 /* contact */
 .contact {
