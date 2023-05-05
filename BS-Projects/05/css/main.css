@@ -156,7 +156,7 @@ body {
 
 
 /* services */
-.services {
+.services, #tour {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
 }
 
@@ -257,3 +257,20 @@ body {
     transform: translate(-50%,0);
 }
 
+
+/* tour */
+.tour-icon {
+    color: var(--mainGreen);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--mainWhite);
+    border-radius: 30%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.tour-icon:hover {
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
