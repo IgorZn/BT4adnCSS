@@ -274,3 +274,9 @@ body {
     background: var(--mainGreen);
     color: var(--mainWhite);
 }
+
+
+/* footer */
+.footer {
+    background: var(--mainDark);
+}
