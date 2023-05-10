@@ -17,3 +17,38 @@ body {
 }
 
 /* REM values to target root element 1REM = 16px */
+
+.navbar {
+    background: var(--mainWhite);
+}
+
+.navbar-toggler-icon {
+    font-size: 2rem;
+    color: var(--mainBlue);
+}
+
+.navbar-toggler {
+    outline-color: var(--mainYellow)!important;
+}
+
+.nav-link {
+    color: var(--mainBlack);
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    color: var(--mainBlue);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    color: var(--mainBlue);
+    text-decoration: none!important;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.nav-icon:hover {
+    color: var(--mainBlack);
+}
