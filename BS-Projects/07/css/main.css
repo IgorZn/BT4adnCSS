@@ -52,3 +52,61 @@ body {
 .nav-icon:hover {
     color: var(--mainBlack);
 }
+
+
+/* header */
+
+.header {
+    clip-path: polygon(0 0, 100% 0,100% 95%, 50% 100%, 0 95%);
+    color: var(--mainWhite);
+    overflow: hidden;
+}
+
+.height-max {
+    min-height: calc(100vh - 76px);
+    background: no-repeat center/cover url('../img/headerBcg.jpeg') fixed;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+.title-heading {
+    background: rgba(0,0,0,0.4);
+    border-left: 0.3 solid var(--mainBlue);
+}
+
+.title {
+    font-size: 1.9rem;
+    font-weight: 700;
+
+}
+
+@media screen and (min-width: 768px){
+    .title {
+        font-size: 3rem;
+    }
+
+}
+
+.title-icon {
+    color: var(--mainBlue);
+    text-decoration: none!important;
+}
+
+.title-icon:hover {
+    color: var(--mainBlue);
+    opacity: 0.6;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) translateX(-5%);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
